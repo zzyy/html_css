@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>picture1</title>
+	<meta name="author" content="P0025898" />
+	<!-- Date: 2013-08-05 -->
+	<style>
+		.warp{
+			/*position: absolute;
+			left:50%;*/
+			
+			float:left;
+			margin-left:50%;
+		}
+		.contanier{
+			position:relative;
+			border: 1px dashed blue;
+			right:50%;
+		}
+		.pic{
+			position:relative;
+			display:inline-block;
+			border: 1px dashed red;
+			width:140px;
+			height:140px;
+		}
+		.pic:hover span{
+			transform: translateY(20%);
+		}
+		.pic span{
+			display:block;
+			width:100%;
+			height:20%;
+			color:#FFFFFF;
+			background:#000;
+			opacity:0.6;
+			filter:alpha(opacity=60);
+			position: absolute;
+			left:0;
+			bottom: -20%;
+		}
+	</style>
+</head>
+<body>
+	<div class="warp">
+		<div class="contanier">
+			<div class="pic">
+				<span>123</span>
+			</div>
+			<div class="pic">
+				<span>456</span>
+			</div>
+		</div>
+	</div>
+	<div class="pic"></div>
+</body>
+</html>
+
